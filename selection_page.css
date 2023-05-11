@@ -1,0 +1,139 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: "Open Sans", sans-serif;
+}
+body{
+	width:100%;
+	height:100vh;
+	background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbGYMw4GgyiYLHPXnpx12zjswVbwoELCY_Xg&usqp=CAU");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	background-attachment:fixed;
+	font-family: "Open Sans", sans-serif;
+}
+.nav{
+	background:rgba(0,0,0,0.5);
+	padding:10px 120px 10px 70px;
+	border:1px solid #000;
+	border-left:none;
+	border-right:none;
+	justify-content: space-between;
+}
+.nav ul{
+	display:flex;
+	list-style:none;
+	flex-wrap:wrap;
+	align-items:center;
+	justify-content:center;
+}
+.nav ul li.logo{
+	flex:1;
+	color:#f2f2f2;
+	font-size:30px;
+	font-weight:700;	
+}
+.nav ul img{
+	width:50px;
+	height:50px;
+	border-radius:50%;
+}
+
+.nav ul div.items{
+	padding:0 25px;
+	display:inline-flex;
+}
+.nav ul div.items a{
+	color:#f2f2f2;
+	text-decoration:none;
+	font-size:18px;
+	padding:0 12px;
+}
+.nav ul div.items a:hover{
+	color:black;
+	transition:.3s;
+	background-color:white;
+	opacity:0.5;
+	padding:12px 30px;
+	border-radius:3px;
+}
+@media screen and (max-width:1052px){
+	nav{
+		padding:10px 40px 10px 0px;
+	}
+	nav ul li.logo{
+	display:none;
+	}
+	nav ul div.items{
+		flex:4
+	}
+}
+
+.container{
+	position:absolute;
+	margin:50px 0 50px 50px;
+	padding:10px 100px 10px 70px;
+	border-radius:10px;
+	width:80%;
+	height:auto;
+}
+
+.container img{
+	width:50px;
+	height:50px;
+	border-radius:50%;
+	float:left;
+}
+.container ul{
+	display:flex;
+	list-style:none;
+}
+.container ul li{
+	width:170px;
+	flex-wrap:wrap;
+	color:#f2f2f2;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	position:relative;
+	font-size:30px;
+	font-weight:700;
+	background-color:rgba(0,0,0,0.5);
+	border-radius:5px;
+	margin-left:5px;
+}
+.container ul li:hover{
+	transition:.3s;
+	background-color:white;
+	border-radius:10px;
+	color:black;
+}
+.container ul ul{
+	margin-left:165px;
+	top:0;
+	color:#f2f2f2;
+	position:absolute;
+	display:none;
+}
+.container ul li:hover > ul{
+	display:block;
+}
+.container ul ul ul{
+	margin-left:165px;
+	top:0;
+	position:absolute;
+	color:#f2f2f2;
+	font-size:20px;
+	font-weight:500;
+}
+.container ul ul li:hover{
+	color:black;
+	transition:.3s;
+	background-color:white;
+	border-radius:10px;
+}
+.container a{
+	text-decoration:none;
+}
